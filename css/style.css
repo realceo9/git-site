@@ -1,31 +1,63 @@
-/* Header сайта с градиентным фоном и навигацией*/
+/* ---- Header layout: full-width gradient + wider inner container ---- */
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
   background: linear-gradient(90deg, #4facfe 0%, #169aa1 100%);
   color: #ffffff;
+  padding: 1rem 0;           
+  box-shadow: 0 6px 20px rgba(0,0,0,0.10);
 }
 
-header nav a {
-  margin-left: 1rem;
+.header-inner {
+  max-width: 1200px;        
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;          
+  gap: 1rem;
+}
+
+/* Заголовок */
+.site-title {
+  margin: 1;
+  font-size: 1.5rem;
+  font-weight: 750;
+  letter-spacing: 0.2px;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+/* Навигация — гарантированно в одну строку */
+.main-nav {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: nowrap;        
+}
+
+/* Ссылки — "плитки" */
+.main-nav a {
+  display: inline-block;
   color: #ffffff;
-  font-weight: 500;
-  text-decoration: none !important; 
-  border-bottom: 2px solid transparent;
+  font-weight: 600;
+  text-decoration: none !important;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: background 0.18s ease, transform 0.12s ease;
+  white-space: nowrap;      
 }
 
-header nav a:hover {
-  transform: scale(1.1);
-  border-bottom: 2px solid #ffffff;
+/* Hover: мягкая подсветка */
+.main-nav a:hover,
+.main-nav a:focus {
+  background: rgba(255,255,255,0.10);
+  transform: translateY(-2px);
+  outline: none;
 }
 
 /* Основной контент сайта */
 main {
-  max-width: 1000px;       
+  max-width: 900px;       
   margin: 2rem auto;       
-  line-height: 1.6;        
+  line-height: 1.4;        
   font-family: Arial, sans-serif; 
   color: hsl(0, 0%, 100%);          
 }
@@ -61,4 +93,5 @@ main section h2 {
 main section p {
   margin-bottom: 0.5rem;
 }
+
 
