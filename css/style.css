@@ -43,4 +43,22 @@ main ul, main ol {
   margin-bottom: 1rem;
 }
 
+/* Секции и карточки в main */
+main section {
+  background-color: #759bbe; 
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 8px;        
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+main section h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #31465c;
+}
+
+main section p {
+  margin-bottom: 0.5rem;
+}
 
