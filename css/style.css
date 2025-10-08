@@ -130,17 +130,22 @@ footer {
 }
 
 .footer-inner {
-  max-width: 900px;
+  max-width: 1200px;
+   width: 100%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap; 
   gap: 0.5rem;
+  align-items: center; 
+  padding: 0 2rem; 
+  box-sizing: border-box;
 }
 
 .footer-col {
   display: flex;
   flex-direction: column;
+  flex: 1 1 auto; 
 }
 
 .footer-col a {
@@ -156,8 +161,10 @@ footer {
 }
 
 .footer-contact {
+  display: flex;
   flex-direction: row;          
   flex-wrap: wrap;              
   gap: 0.3rem;                  
-  align-items: center;         
+  align-items: center; 
+  justify-content: flex-end;
 }
