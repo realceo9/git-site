@@ -17,7 +17,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   padding: 0 2rem; 
   gap: 1rem; 
 }
@@ -25,11 +25,13 @@ header {
 
 /* Заголовок */
 .site-title {
-  margin: 1;
-  font-size: 3rem;
+  margin: 0;
+  font-size: clamp(2rem, 5vw, 3rem);;
   font-weight: 750;
   letter-spacing: 0.2px;
   text-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  max-width: 100%;
+  word-wrap: break-word;
 }
 
 /* Навигация */
