@@ -76,11 +76,12 @@ header {
 
 /* Основной контент сайта */
 main {
-  max-width: 600px;       
+  max-width: 900px;       
   margin: 2rem auto;       
   line-height: 1.4;        
   font-family: Arial, sans-serif; 
-  color: hsl(0, 0%, 100%);          
+  color: hsl(0, 0%, 100%);
+  padding: 0 1rem;          
 }
 
 main h1, main h2, main h3 {
@@ -99,10 +100,11 @@ main ul, main ol {
 /* Секции и карточки в main */
 main section {
   background-color: #759bbe; 
-  padding: 1.5rem;
+  padding: 2rem;
   margin-bottom: 2rem;
-  border-radius: 8px;        
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  border-radius: 12px;        
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s; 
 }
 
 main section h2 {
@@ -128,7 +130,7 @@ footer {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap; /* чтобы колонки переносились на маленьких экранах */
+  flex-wrap: wrap; 
   gap: 1rem;
 }
 
@@ -145,7 +147,7 @@ footer {
 }
 
 .footer-col a:hover {
-  color: #6eaebe;   /* золотой при наведении */
+  color: #6eaebe;   
   transform: translateY(-2px);
 }
 
