@@ -1,24 +1,24 @@
 /* Header full-width gradient */
 header {
-  width: 100%; /* на всю ширину окна */
+  width: 100%; 
   background: linear-gradient(90deg, #4facfe 0%, #169aa1 100%);
   color: #ffffff;
-  padding: 2rem 0; /* вертикальный padding */
+  padding: 2rem 0; 
   box-shadow: 0 6px 20px rgba(0,0,0,0.10);
   display: flex;
-  justify-content: center; /* центрируем внутренний блок */
+  justify-content: center; 
 }
 
-/* Inner container шире, чем main */
+/* Inner container */
 .header-inner {
-  max-width: 1200px; /* чуть шире main (например main 900px) */
+  max-width: 1200px; 
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 2rem; /* отступы слева/справа */
+  padding: 0 2rem; 
   gap: 1rem;
-  flex-wrap: wrap; /* перенос для маленьких экранов */
+  flex-wrap: wrap; 
 }
 
 
@@ -36,7 +36,7 @@ header {
   display: flex;
   gap: 12px;
   align-items: center;
-  flex-wrap: wrap;   /* разрешаем перенос на новые строки при узких экранах */
+  flex-wrap: wrap;   
 }
 
 /* Ссылки — "плитки" */
@@ -121,16 +121,19 @@ footer {
   align-items: center;
   max-width: 900px;
   margin: 2rem auto;
-  padding: 1rem 2rem;
-  background-color: #2e4f70; /* чуть темнее блоков main */
+  padding: 0.8rem 2rem;
+  background-color: #375f86; 
   color: #ffffff;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  font-size: 0.9rem;       
+  line-height: 1.3;
 }
 
 footer a {
   color: #ffffff;
   text-decoration: underline;
+  font-size: 0.9rem;
 }
 
 .footer-left, .footer-right {
